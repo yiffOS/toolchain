@@ -17,4 +17,4 @@ To allow the scripts to find the sources, please ensure the extracted sources ar
 A destination folder and a target folder will need to be created to allow the toolchain to properly link.
 
 Script Usage:  
-`./create-toolchain.sh "destination folder" "target folder" "source folder" "makeflags"`
+`./create-toolchain.sh "destination folder" "source folder" "makeflags"`
