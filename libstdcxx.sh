@@ -29,4 +29,4 @@ cd build
 
 
 make $4
-make DESTDIR=$1 installs
+make DESTDIR=$1 install
