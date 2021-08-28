@@ -14,7 +14,7 @@ You'll also need the sources for:
  
 To allow the scripts to find the sources, please ensure the extracted sources are in a folder with only it's name as the folder name. (Example: gcc 10.2.0 would be in /sources/gcc)
 
-A destination folder and a target folder will need to be created to allow the toolchain to properly link.
+A destination folder will need to be created to allow the toolchain to properly link.	
 
 Script Usage:  
 `./create-toolchain.sh "destination folder" "source folder" "makeflags"`
