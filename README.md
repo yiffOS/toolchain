@@ -11,6 +11,10 @@ You'll also need the sources for:
 * openssl 1.1.1l
 * cmake 3.21.1
 * llvm 12.0.1
+* clang 12.0.1
+* compiler-rt 12.0.1
+* libcxx 12.0.1
+* libcxxabi 12.0.1
  
 To allow the scripts to find the sources, please ensure the extracted sources are in a folder with only it's name as the folder name. (Example: gcc 10.2.0 would be in /sources/gcc)
 

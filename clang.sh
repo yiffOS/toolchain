@@ -18,9 +18,10 @@ cd $3
 mkdir -v build
 cd build
 
-cmake -DCMAKE_INSTALL_PREFIX=$1/tools  \
-      -DCMAKE_BUILD_TYPE=Release       \
-      -DLLVM_TARGETS_TO_BUILD="host"   \
+cmake -DCMAKE_INSTALL_PREFIX=$1/tools  					\
+      -DCMAKE_BUILD_TYPE=Release       					\
+      -DLLVM_TARGETS_TO_BUILD="host"   					\
+      -DLLVM_ENABLE_PROJECTS="clang;compiler-rt;libcxx;libcxxabi"       \
       -Wno-dev ..
 
 make $4
