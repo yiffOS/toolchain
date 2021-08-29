@@ -24,7 +24,7 @@ case $(uname -m) in
     ;;
 esac
 
-patch -Np1 -i ./glibc-2.33-fhs-1.patch
+patch -Np1 -i ./glibc-2.34-fhs-1.patch
 
 mkdir -v build
 cd build

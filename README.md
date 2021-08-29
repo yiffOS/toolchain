@@ -7,7 +7,7 @@ You'll also need the sources for:
 * binutils 2.36.1
 * gcc 10.2.0
 * linux 5.13.13
-* glibc 2.33 with [this patch](https://www.linuxfromscratch.org/patches/downloads/glibc/glibc-2.33-fhs-1.patch)
+* glibc 2.34 with [this patch](https://www.linuxfromscratch.org/patches/downloads/glibc/glibc-2.34-fhs-1.patch)
 * openssl 1.1.1l
 * cmake 3.21.1
 * llvm 12.0.1
