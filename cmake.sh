@@ -13,13 +13,12 @@ echo "Source: $3"
 echo "Makeflags: $4"
 echo "########"
 
+sed -i '/CMAKE_USE_LIBUV 1/s/1/0/' CMakeLists.txt
+sed -i '/"lib64"/s/64//' Modules/GNUInstallDirs.cmake
 
 cd $3
 mkdir -v build
 cd build
-
-sed -i '/CMAKE_USE_LIBUV 1/s/1/0/' CMakeLists.txt
-sed -i '/"lib64"/s/64//' Modules/GNUInstallDirs.cmake
 
 ../bootstrap --prefix=$1/tools \
              --no-system-libs

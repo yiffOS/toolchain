@@ -41,6 +41,8 @@ cd build
 make $4
 make DESTDIR=$1 install
 
+sed '/RTLDLIST=/s@/usr@@g' -i $1/usr/bin/ldd
+
 echo "########"
 echo "Testing glibc and gcc" 
 echo "########"
@@ -50,3 +52,5 @@ readelf -l a.out | grep '/ld-linux'
 echo "########"
 echo "Please check if the above content is [Requesting program interpreter: /lib64/ld-linux-x86-64.so.2] or [Requesting program interpreter: /lib64/ld-linux.so.2]"
 read -p "Press any key if it matches, exit the script if it doesn't."
+
+$1/tools/libexec/gcc/$2/11.2.0/install-tools/mkheaders
