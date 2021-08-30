@@ -25,7 +25,7 @@ cd build
     --disable-multilib              \
     --disable-nls                   \
     --disable-libstdcxx-pch         \
-    --with-gxx-include-dir=/tools/$2/include/c++/10.2.0
+    --with-gxx-include-dir=/tools/$2/include/c++/11.2.0
 
 
 make $4
