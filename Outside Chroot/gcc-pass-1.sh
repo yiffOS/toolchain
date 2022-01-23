@@ -26,7 +26,7 @@ cd build
 ../configure                                       \
     --target=$2                                    \
     --prefix=$1/tools                              \
-    --with-glibc-version=2.11                      \
+    --with-glibc-version=2.34                      \
     --with-sysroot=$1                              \
     --with-newlib                                  \
     --without-headers                              \
