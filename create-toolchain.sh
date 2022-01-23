@@ -46,3 +46,16 @@ cd "Temporary Tools"
 cd ..
 
 # Chroot time!
+echo "==> Preparing chroot"
+sudo ./Misc/prepare-chroot.sh $1
+cp -r "Inside Chroot"/* $1/toolchain/
+
+echo "==> Entering chroot"
+echo "!> Please run the following command in the chroot to continue <!"
+echo "!>   $ /toolchain/inside-chroot.sh <!"
+sudo ./Misc/enter-chroot.sh $1
+
+echo "==>> Done! <==="
+echo "!> If you'd like to enter chroot again, run the following commands <!"
+echo "!>   $ ./Misc/prepare-chroot.sh <mount location> <!"
+echo "!>   $ ./Misc/enter-chroot.sh <mount location> <!"
