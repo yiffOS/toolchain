@@ -1,13 +1,10 @@
 #! /bin/bash
 
-echo "########"
-echo "Building: glibc"
-echo "########"
-echo "Mount: $1"
-echo "Target: $2"
-echo "Source: $3"
-echo "Makeflags: $4"
-echo "########"
+echo "=> Building: glibc"
+echo "> Mount: $1"
+echo "> Target: $2"
+echo "> Source: $3"
+echo "> Makeflags: $4"
 
 
 cd $3
@@ -39,13 +36,10 @@ make DESTDIR=$1 install
 
 sed '/RTLDLIST=/s@/usr@@g' -i $1/usr/bin/ldd
 
-echo "########"
 echo "Testing glibc and gcc" 
-echo "########"
 echo 'int main(){}' > dummy.c
 $2-gcc dummy.c
 readelf -l a.out | grep '/ld-linux'
-echo "########"
 echo "Please check if the above content is [Requesting program interpreter: /lib64/ld-linux-x86-64.so.2] or [Requesting program interpreter: /lib64/ld-linux.so.2]"
 read -p "Press any key if it matches, exit the script if it doesn't."
 

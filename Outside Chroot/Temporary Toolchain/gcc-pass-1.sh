@@ -1,13 +1,10 @@
 #! /bin/bash
 
-echo "########"
-echo "Building: gcc"
-echo "########"
-echo "Mount: $1"
-echo "Target: $2"
-echo "Source: $3"
-echo "Makeflags: $4"
-echo "########"
+echo "=> Building: gcc (pass 1)"
+echo "> Mount: $1"
+echo "> Target: $2"
+echo "> Source: $3"
+echo "> Makeflags: $4"
 
 
 cd $3
