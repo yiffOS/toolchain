@@ -1,9 +1,5 @@
 #! /bin/bash
 
-# GCC can be compiled with clang (somehow)
-export CC=clang 
-export CXX=clang++
-
 echo "########"
 echo "Building: gcc"
 echo "########"

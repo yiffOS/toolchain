@@ -1,9 +1,5 @@
 #! /bin/bash
 
-# libstdc++ can NOT be compiled with clang
-export CC=gcc
-export CXX=g++
-
 echo "########"
 echo "Building: libstdc++"
 echo "########"

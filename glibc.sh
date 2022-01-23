@@ -1,9 +1,5 @@
 #! /bin/bash
 
-# Glibc can NOT be compiled with clang
-export CC=gcc
-export CXX=g++
-
 echo "########"
 echo "Building: glibc"
 echo "########"

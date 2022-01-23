@@ -14,6 +14,3 @@ echo "Makeflags: $3"
 ./linux-headers.sh $1 $target $2/linux $3
 ./glibc.sh $1 $target $2/glibc $3
 ./libstdcxx.sh $1 $target $2/gcc $3
-#./openssl.sh $1 $target $2/openssl $3
-#./cmake.sh $1 $target $2/cmake $3
-#./clang.sh $1 $target $2/llvm $3

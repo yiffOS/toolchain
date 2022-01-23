@@ -1,8 +1,5 @@
 #! /bin/bash
 
-# Linux headers can be compiled with clang
-export CC=clang 
-export CXX=clang++
 
 echo "########"
 echo "Building: Linux headers"
