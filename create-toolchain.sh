@@ -26,6 +26,23 @@ cd ..
 echo "==> Building Temporary Tools"
 
 cd "Temporary Tools" 
+./m4.sh $1 $target $2/m4 $3
+./ncurses.sh $1 $target $2/ncurses $3
+./bash.sh $1 $target $2/bash $3
+./coreutils.sh $1 $target $2/coreutils $3
+./diffutils.sh $1 $target $2/diffutils $3
+./file.sh $1 $target $2/file $3
+./findutils.sh $1 $target $2/findutils $3
+./gawk.sh $1 $target $2/gawk $3
+./grep.sh $1 $target $2/grep $3
+./gzip.sh $1 $target $2/gzip $3
+./make.sh $1 $target $2/make $3
+./patch.sh $1 $target $2/patch $3
+./sed.sh $1 $target $2/sed $3
+./tar.sh $1 $target $2/tar $3
+./xz.sh $1 $target $2/xz $3
+./binutils-pass-2.sh $1 $target $2/binutils $3
+./gcc-pass-1.sh $1 $target $2/gcc $3
 cd ..
 
 # Chroot time!
